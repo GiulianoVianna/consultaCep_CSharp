@@ -20,8 +20,6 @@ Newtonsoft.Json para manipulação de JSON
 ### Pré-requisitos
 Visual Studio 2019 ou superior
 .NET Framework 4.7.2 ou superior
-Como Configurar
-Clone o repositório para sua máquina local.
 
 ### Como Usar
 Insira o CEP no campo de texto.
