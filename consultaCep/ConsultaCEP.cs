@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Net.Http;
-using Newtonsoft.Json.Linq;  // Adicione essa biblioteca para manipular JSON
+using Newtonsoft.Json.Linq;  // Biblioteca para manipular JSON
 
 namespace consultaCep
 {
@@ -55,7 +55,9 @@ namespace consultaCep
             }
             else
             {
-                MessageBox.Show("Não foi possível obter informações para este CEP.");
+                MessageBox.Show("Não foi possível obter informações para este CEP.","Informação", 
+                MessageBoxButtons.OK, 
+                MessageBoxIcon.Information);
             }
         }
     }
