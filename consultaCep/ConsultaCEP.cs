@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Net.Http;
-using Newtonsoft.Json.Linq;  // Biblioteca para manipular JSON
+using Newtonsoft.Json.Linq;  // Adicione essa biblioteca para manipular JSON
 
 namespace consultaCep
 {
@@ -22,7 +22,7 @@ namespace consultaCep
             // Verificar se o CEP não está vazio
             if (string.IsNullOrEmpty(cep))
             {
-                MessageBox.Show("Por favor, insira um CEP válido.","Informação",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Por favor, insira um CEP válido.");
                 return;
             }
 
@@ -55,8 +55,7 @@ namespace consultaCep
             }
             else
             {
-                MessageBox.Show("Não foi possível obter informações para este CEP.","Informação",MessageBoxButtons.OK,MessageBoxIcon.Information);
-
+                MessageBox.Show("Não foi possível obter informações para este CEP.");
             }
         }
     }
